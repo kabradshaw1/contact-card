@@ -1,0 +1,19 @@
+{
+  "name": "19.0",
+  "version": "1.0.0",
+  "description": "UNC Bootcamp exercise for developing Progressive Web Application concepts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabradshaw1/contact-card.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabradshaw1/contact-card/issues"
+  },
+  "homepage": "https://github.com/kabradshaw1/contact-card#readme"
+}
