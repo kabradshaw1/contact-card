@@ -4,7 +4,12 @@
   "description": "UNC Bootcamp exercise for developing Progressive Web Application concepts.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "client": "cd client && npm start"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/kabradshaw1/contact-card/issues"
   },
-  "homepage": "https://github.com/kabradshaw1/contact-card#readme"
+  "homepage": "https://github.com/kabradshaw1/contact-card#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
 }
