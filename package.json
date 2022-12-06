@@ -23,5 +23,8 @@
   "homepage": "https://github.com/kabradshaw1/contact-card#readme",
   "dependencies": {
     "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
   }
 }
