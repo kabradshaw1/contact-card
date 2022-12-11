@@ -1,27 +1,24 @@
 {
-  "name": "19.0",
+  "name": "contact-cards",
   "version": "1.0.0",
-  "description": "UNC Bootcamp exercise for developing Progressive Web Application concepts.",
-  "main": "index.js",
+  "description": "",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
-    "start": "cd server && node server.js",
-    "server": "cd server nodemon server.js --ignore client",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server node server.js --ignore client",
     "build": "cd client && npm run build",
-    "client": "cd client && npm start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kabradshaw1/contact-card.git"
+    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
+    "client": "cd client && npm start",
+    "heroku-prebuild": "npm install --dev"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kabradshaw1/contact-card/issues"
-  },
-  "homepage": "https://github.com/kabradshaw1/contact-card#readme",
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.0.0",
+    "idb": "^7.1.1"
+  },
+  "engines": {
+    "node": "17.x"
   }
 }
